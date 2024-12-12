@@ -1,32 +1,35 @@
 #ifndef Transport_Company_hpp
 #define Transport_Company_hpp
 
-#include <stdio.h>
 #include <iostream>
 #include <string>
+#include "Vehicle.hpp"
+#include "Driver.hpp"
+
 using namespace std;
 
 
 class TransportCompany{
 protected:
     char name[20];
-    char addres[20];
-    //do array wiht Vehicle
+    char address[20];
+    Vehicle* vArr[10];
     int vehicleAmount;
-    //do array wiht Drivers
+    Driver* dArr[10];
     int driversAmount;
-
     
     
 public:
     TransportCompany();
     TransportCompany(const char nameI[20], const char addresI[20] );
-    //void addVehicle() to do
-    //void addDriver() to do
-    //void defineTrack() to do
-    //void printFreeVehicles() to do
+    void addVehicle(Vehicle* vi);
+    void addDriver(Driver* dr);
+    void defineTrack(Vehicle* vi, Driver* dr);
+    void printFreeVehicles();
+    void printAllDrivers();
+
     
 };
 
 
-#endif /* Transport_Company_hpp */
+#endif 

@@ -4,13 +4,13 @@
 
 using namespace std;
 
-Vehicle::Vehicle(const char modelI[20], const char regNumberI[20], int productionYear, Driver* driverI, const char vignetteExpiryDateI[20], char requiredCategory): productionYear(productionYear), requiredCategory(requiredCategory){
+Vehicle::Vehicle(const char modelI[20], const char regNumberI[20], int productionYear, const char vignetteExpiryDateI[20], char requiredCategory): productionYear(productionYear), requiredCategory(requiredCategory){
     
     strcpy(model, modelI);
     strcpy(regNumber, regNumberI);
     strcpy(vignetteExpiryDate, vignetteExpiryDateI);
     isInGarage = true;
-    driver = driverI;
+    driver = nullptr;
 }
 
 void Vehicle::printInfo() {
@@ -27,4 +27,20 @@ void Vehicle::printInfo() {
     }
     cout << "Винетка валидна до: " << vignetteExpiryDate << endl;
     cout << "Необходими категории: " << requiredCategory << endl;
+}
+
+char Vehicle::getRequiredCategory(){
+    return requiredCategory;
+}
+
+bool Vehicle::getIsInGarage(){
+    return isInGarage;
+}
+void Vehicle::goOnTheRoad(){
+    isInGarage=false;
+}
+
+
+void Vehicle::setDriver(Driver* driverI){
+    driver = driverI;
 }

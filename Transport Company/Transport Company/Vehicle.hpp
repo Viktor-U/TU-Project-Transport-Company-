@@ -3,6 +3,7 @@
 
 #include <stdio.h>
 #include "Driver.hpp"
+class Driver;
 
 class Vehicle {
 protected:
@@ -15,9 +16,13 @@ protected:
     char requiredCategory;
 
 public:
-    Vehicle(const char model[20], const char regNumber[20], int productionYear, Driver* driver, const char vignetteExpiryDate[20], char requiredCategory);
-    
+    Vehicle(const char model[20], const char regNumber[20], int productionYear, const char vignetteExpiryDate[20], char requiredCategory);
+    char getRequiredCategory();
+    void setDriver(Driver* driverI);
+    bool getIsInGarage();
+    void goOnTheRoad();
     virtual void printInfo();
+    
 };
 
 #endif
