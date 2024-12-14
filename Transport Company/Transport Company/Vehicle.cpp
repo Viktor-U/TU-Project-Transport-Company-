@@ -4,6 +4,14 @@
 
 using namespace std;
 
+Vehicle::Vehicle(){
+    strcpy(model, "");
+    strcpy(regNumber, "");
+    strcpy(vignetteExpiryDate, "");
+    isInGarage = true;
+    driver = nullptr;
+}
+
 Vehicle::Vehicle(const char modelI[20], const char regNumberI[20], int productionYear, const char vignetteExpiryDateI[20], char requiredCategory): productionYear(productionYear), requiredCategory(requiredCategory){
     
     strcpy(model, modelI);

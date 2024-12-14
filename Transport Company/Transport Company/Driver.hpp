@@ -14,6 +14,7 @@ private:
     bool isAvailable;
 
 public:
+    Driver();
     Driver(const char fullname[30], int age,const char categories[5]);
     bool isQualificated(Vehicle* vehicle);
     void setCourse();

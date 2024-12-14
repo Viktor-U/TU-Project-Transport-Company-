@@ -16,6 +16,7 @@ protected:
     char requiredCategory;
 
 public:
+    Vehicle();
     Vehicle(const char model[20], const char regNumber[20], int productionYear, const char vignetteExpiryDate[20], char requiredCategory);
     char getRequiredCategory();
     void setDriver(Driver* driverI);

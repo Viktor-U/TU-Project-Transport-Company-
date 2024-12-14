@@ -4,6 +4,12 @@
 
 using namespace std;
 
+Driver::Driver(): age(0), isAvailable(true){
+    strcpy(fullName, "");
+    strcpy(categories, "");
+    
+}
+
 Driver::Driver(const char fullnameI[30], int age, const char categoriesI[5])
     : age(age), isAvailable(true) {
 
