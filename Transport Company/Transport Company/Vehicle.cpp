@@ -12,7 +12,7 @@ Vehicle::Vehicle(){
     driver = nullptr;
 }
 
-Vehicle::Vehicle(const char modelI[20], const char regNumberI[20], int productionYear, const char vignetteExpiryDateI[20], char requiredCategory): productionYear(productionYear), requiredCategory(requiredCategory){
+Vehicle::Vehicle(char* modelI,char* regNumberI, int productionYear,char* vignetteExpiryDateI, char requiredCategory): productionYear(productionYear), requiredCategory(requiredCategory){
     
     strcpy(model, modelI);
     strcpy(regNumber, regNumberI);

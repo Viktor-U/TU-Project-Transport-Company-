@@ -17,7 +17,7 @@ protected:
 
 public:
     Vehicle();
-    Vehicle(const char model[20], const char regNumber[20], int productionYear, const char vignetteExpiryDate[20], char requiredCategory);
+    Vehicle(char* model, char* regNumber, int productionYear, char* vignetteExpiryDate, char requiredCategory);
     char getRequiredCategory();
     void setDriver(Driver* driverI);
     bool getIsInGarage();
