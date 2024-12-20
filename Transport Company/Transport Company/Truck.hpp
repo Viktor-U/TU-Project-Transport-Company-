@@ -10,7 +10,7 @@ private:
 
 public:
     Truck();
-    Truck(char* model, char* regNumber, int productionYear, char* vignetteExpiryDate, char requiredCategory, int cargoCapacity);
+    Truck(const char* model, const char* regNumber, int productionYear, const char* vignetteExpiryDate, char requiredCategory, int cargoCapacity);
 
     void printInfo(); 
 };

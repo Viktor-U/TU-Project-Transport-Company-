@@ -13,7 +13,7 @@ Truck::Truck(){
     cargoCapacity = 0;
 }
 
-Truck::Truck(char* model, char* regNumber, int productionYear, char* vignetteExpiryDate, char requiredCategory, int cargoCapacity)
+Truck::Truck(const char* model, const char* regNumber, int productionYear, const char* vignetteExpiryDate, char requiredCategory, int cargoCapacity)
     : Vehicle(model, regNumber, productionYear, vignetteExpiryDate, requiredCategory), cargoCapacity(cargoCapacity) {}
 
 void Truck::printInfo() {

@@ -10,7 +10,7 @@ private:
 
 public:
     Bus();
-    Bus(char* model, char* regNumber, int productionYear, char* vignetteExpiryDate, char requiredCategory, int seats);
+    Bus(const char* model, const char* regNumber, int productionYear, const char* vignetteExpiryDate, char requiredCategory, int seats);
 
     void printInfo(); 
 };

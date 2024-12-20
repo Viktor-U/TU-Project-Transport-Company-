@@ -15,7 +15,7 @@ private:
 
 public:
     Driver();
-    Driver(const char fullname[30], int age,const char categories[5]);
+    Driver(const char* fullname, int age,const char* categories);
     bool isQualificated(Vehicle* vehicle);
     void setCourse();
     void printInfo();

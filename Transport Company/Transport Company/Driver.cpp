@@ -10,7 +10,7 @@ Driver::Driver(): age(0), isAvailable(true){
     
 }
 
-Driver::Driver(const char fullnameI[30], int age, const char categoriesI[5])
+Driver::Driver(const char* fullnameI, int age, const char* categoriesI)
     : age(age), isAvailable(true) {
 
         strcpy(fullName, fullnameI);

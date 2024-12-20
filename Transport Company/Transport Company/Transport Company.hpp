@@ -21,7 +21,7 @@ protected:
     
 public:
     TransportCompany();
-    TransportCompany(const char nameI[20], const char addresI[20] );
+    TransportCompany(const char* nameI, const char* addresI );
     void addVehicle(Vehicle* vi);
     void addDriver(Driver* dr);
     void defineTrack(Vehicle* vi, Driver* dr);

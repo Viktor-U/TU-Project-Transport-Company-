@@ -7,7 +7,7 @@ TransportCompany::TransportCompany(){
     strcpy(name, "");
     strcpy(address, "");
 }
-TransportCompany::TransportCompany(const char nameI[20], const char addressI[20]){
+TransportCompany::TransportCompany(const char* nameI, const char* addressI){
     strcpy(name, nameI);
     strcpy(address,addressI);
     vehicleAmount = 0;
